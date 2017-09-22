@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!-- 配置表和对象的关联 -->
+	<class name="com.vo.AccountVo" table="account">
+		<!-- 配置主键 name指定对象的属性 column表的列名 -->
+		<id name="oid">
+			<!-- 指定主键采用数据库的自增机制 -->
+			<generator class="foreign">
+				<param name="property">employee</param>
+			</generator>
+		</id>
+		<property name="username" type="string" length="20"></property>
+		<property name="password" type="string" length="20"></property>
+		<one-to-one name="employee" class="com.vo.EmployeeVo" cascade="all"></one-to-one>
+	</class>
+</hibernate-mapping>

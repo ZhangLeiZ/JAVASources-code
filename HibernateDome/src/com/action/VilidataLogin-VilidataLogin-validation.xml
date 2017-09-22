@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0//EN" "http://www.opensymphony.com/xwork/xwork-validator-1.0.dtd">
+<validators>
+	<field name="emp.Empid">
+    	<field-validator type="requiredstring">
+            <message>请输入员工编号</message>
+        </field-validator>
+        <field-validator type="stringlength">
+        	<param name="minLength">6</param>
+        	<param name="maxLength">20</param>
+        	<message>员工编号必须在${minLength}-${maxLength}位之间</message>
+        </field-validator>
+    </field>
+    <field name="emp.Empname">
+    	<field-validator type="requiredstring">
+            <message>请输入员工姓名</message>
+        </field-validator>
+    </field>   
+    <field name="emp.Empage">
+    	<field-validator type="requiredstring">
+    		<message>请输入年龄</message>
+    	</field-validator>
+    	<field-validator type="int">
+    		<param name="min">1</param>
+    		<param name="max">100</param>
+    		<message>请输入${min}-${max}之间的数！</message>
+    	</field-validator>
+    </field>
+    <field name="emp.Empsex">
+    	<field-validator type="requiredstring">
+    		<message>请选择性别！</message>
+    	</field-validator>
+    </field>
+    <field name="emp.Empcardno">
+    	<field-validator type="requiredstring">
+    		<message>请输入身份证号！</message>
+    	</field-validator>
+    	<field-validator type="stringlength">
+    		<param name="minLength">18</param>
+    		<param name="maxLength">18</param>
+    		<message>请输入18位的身份证号码！</message>
+    	</field-validator>
+    </field>
+    <field name="emp.Empdate">
+    	<field-validator type="requiredstring">
+    		<message>请输入入职时间！</message>
+    	</field-validator>
+    	<field-validator type="date">
+    		<param name="min">1990-1-1</param>
+    		<param name="max">2020-12-12</param>
+    		<message>输入的范围和格式必须是${min}-${max}之间！</message>
+    	</field-validator>
+    </field>
+    <field name="emp.Empemile">
+    	<field-validator type="requiredstring">
+    		<message>请输入邮箱地址！</message>
+    	</field-validator>
+    	<field-validator type="email">
+    		<message>请输入正确的邮箱格式！</message>
+    	</field-validator>
+    </field>
+</validators>

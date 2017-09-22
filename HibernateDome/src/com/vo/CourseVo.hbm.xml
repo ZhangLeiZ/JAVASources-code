@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!-- 配置表和对象的关联 -->
+	<class name="com.vo.CourseVo" table="course">
+		<!-- 配置主键 name指定对象的属性 column表的列名 -->
+		<id name="courseid" type="int">
+			<!-- 指定主键采用数据库的自增机制 -->
+			<generator class="native"></generator>
+		</id>
+		<property name="coursename" type="string" length="20"></property>
+		<property name="creait" type="int"></property>
+		<set name="studset" table="selectscore">
+			<key column="COURSEID"></key>
+			<many-to-many class="com.vo.StudentVo" column="sno"/>
+		</set>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Ajaxclickservlet</servlet-name>
+    <servlet-class>com.ht.servlet.Ajaxclickservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Xmlajaxservlet</servlet-name>
+    <servlet-class>com.ht.servlet.Xmlajaxservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>stuatservlet</servlet-name>
+    <servlet-class>com.ht.servlet.stuatservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Tipservlet</servlet-name>
+    <servlet-class>Tipservlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+		<servlet-name>dwr-invoker</servlet-name>
+		<servlet-class>org.directwebremoting.servlet.DwrServlet</servlet-class>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>true</param-value>
+		</init-param>	
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>jqueryservlet</servlet-name>
+    <servlet-class>com.ht.servlet.jqueryservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>JSNOstuservlet</servlet-name>
+    <servlet-class>com.ht.servlet.JSNOstuservlet</servlet-class>
+  </servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>dwr-invoker</servlet-name>
+		<url-pattern>/dwr/*</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Ajaxclickservlet</servlet-name>
+    <url-pattern>/Ajaxclickservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Xmlajaxservlet</servlet-name>
+    <url-pattern>/Xmlajaxservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>stuatservlet</servlet-name>
+    <url-pattern>/Stuatservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Tipservlet</servlet-name>
+    <url-pattern>/Tipservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>jqueryservlet</servlet-name>
+    <url-pattern>/Jqueryservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JSNOstuservlet</servlet-name>
+    <url-pattern>/JSNOstuservlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

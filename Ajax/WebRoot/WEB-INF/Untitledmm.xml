@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="人员信息">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="校领导信息">
+					<xs:complexType>
+						<xs:group ref="data"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="教员信息">
+					<xs:complexType>
+						<xs:group ref="data"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="学生信息">
+					<xs:complexType>
+						<xs:group ref="data"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:group name="data">
+		<xs:sequence>
+			<xs:element name="姓名" type="xs:string"/>
+			<xs:element name="年龄" type="yuesua"/>
+			<xs:element name="性别" type="yuesus"/>
+			<xs:element name="民族" type="xs:string"/>
+			<xs:element name="政治面貌" type="yuesud"/>
+			<xs:element name="职务">
+				<xs:complexType>
+					<xs:attributeGroup ref="shux"></xs:attributeGroup>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="出生日期" type="xs:string"/>
+		</xs:sequence>
+	</xs:group>
+	<xs:attributeGroup name="shux">
+		<xs:attribute name="编号" type="xs:integer"></xs:attribute>
+		<xs:attribute name="年薪" type="xs:string"></xs:attribute>
+	</xs:attributeGroup>
+	<xs:simpleType name="yuesua">
+		<xs:restriction base="xs:integer">
+			<xs:maxInclusive value="100"/>
+			<xs:minInclusive value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="yuesus">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="男"/>
+			<xs:enumeration value="女"/>
+			<xs:whiteSpace value="collapse"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="yuesud">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="党员"/>
+			<xs:enumeration value="团员"/>
+			<xs:enumeration value="清白"/>
+			<xs:whiteSpace value="collapse"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN"
+	"http://getahead.ltd.uk/dwr/dwr20.dtd">
+
+<dwr>
+
+	<allow>
+	<!--  
+		<create creator="new" javascript="JDate">
+			创建Jdate对象使用的Java类为java.util.Date -->
+			<!-- <param name="class" value="java.util.Date" />
+		</create>-->
+		<!--将StudentDAO转化成javaScript对象  
+			include 客户端可以访问的方法
+		-->
+		<create creator="new" javascript="Helloservice">
+			<param name="class" value="com.ajaxdemo.Helloservice"/>
+		</create>
+		<convert converter="bean" match="com.ajaxdemo.UserVo">
+			<param name="include" value="name,age,sex"/>
+		</convert>	
+			
+		<create creator="new" javascript="UserService">
+			<param name="class" value="com.ht.dwr.demo.UserService" />
+		</create>
+
+
+		<convert converter="bean" match="com.ht.dwr.demo.UserVO">
+       		 <param name="include" value="name,age" />
+    	</convert>
+		<!-- 配置bean的数据类型转换器 默认全部转化 
+		 <convert converter="bean" match="edu.tsinghua.dwr.vo.StudentVO">
+       		 <param name="include" value="id,stuName,stuNo,teamId" />
+    	</convert>
+    	 <convert converter="bean" match="edu.tsinghua.dwr.vo.TeamVO">
+       		 <param name="include" value="id,teamName" />
+    	</convert>
+		-->
+	</allow>
+
+
+	<!-- 可以导入用到的包
+		import java.util.List
+	 -->
+	<signatures>
+		<![CDATA[	
+			
+	]]>
+	</signatures>
+</dwr>

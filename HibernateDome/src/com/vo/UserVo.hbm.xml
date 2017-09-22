@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!-- 配置表和对象的关联 -->
+	<class name="com.vo.UserVo" table="useres">
+		<!-- 配置主键 name指定对象的属性 column表的列名 -->
+		<id name="userid" type="int">
+			<!-- 指定主键采用数据库的自增机制 -->
+			<generator class="increment">
+				<param name="property">address</param>
+			</generator>
+		</id>
+		<property name="name" type="string" length="20"></property>
+		<property name="password" type="string" length="20"></property>
+		<set name="address" table="address" inverse="false">
+			<key>
+				<column name="userid"/>
+			</key>
+			<one-to-many class="com.vo.AddressVo"/>
+		</set>
+	</class>
+</hibernate-mapping>

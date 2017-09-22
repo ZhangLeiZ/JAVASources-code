@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	<bean id="dataSource"
+		class="com.mchange.v2.c3p0.DriverManagerDataSource">
+		<property name="connection.driver_class"
+			value="oracle.jdbc.driver.OracleDriver">
+		</property>
+		<property name="connection.url" value="jdbc:oracle:thin:@ZXW-20160904IIU:1521:orcl"></property>
+		<property name="connection.username" value="sys as sysdba"></property>
+		<property name="connection.password" value="zhanglei"></property>
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<!-- 引用dataSource创建数据库的连接 -->
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<!-- hibernate中的配置 -->
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.Oracle9Dialect
+				</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+		<!-- hibernate中的映射配置 -->
+		<property name="mappingResources">
+			<list>
+				<value>com/ht/vo/CourseVo.hbm.xml</value>
+			</list>
+		</property>
+	</bean>
+	
+</beans>

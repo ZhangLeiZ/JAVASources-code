@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service-config>
+	<service name="EmployeeService" class="com.vo.Employeeservice"></service>
+	<service name="DeparmentService" class="com.vo.Deparmentservice"></service>
+</service-config>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 修改后的xml自动加载 -->
+    <constant name="struts.configuration.xml.reload" value="true"/>
+	<constant name="struts.enable.SlashesInActionNames" value="true"/> 
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<include file="struts-default.xml"></include>
+	
+  <package name="Action" extends="struts-default" namespace="/">
+	 <action name="DepartmentAction" class="com.action.DepartmentAction">
+			<result name="success">/Department.jsp</result>
+             <result name="input">/Department.jsp</result>
+		</action>	
+		<action name="accountaction" class="com.action.Accountaction">
+             <result name="success">/Emplist.jsp</result>
+             <result name="input" type="redirectAction">accountaction!Pagelist.action</result>
+             <result name="del" type="redirectAction">accountaction!Pagelist.action</result>
+         	<result name="update">/index.jsp</result>
+         </action>
+		<action name="AddressAction" class="com.action.AddressAction">
+			<result name="success">/address.jsp</result>
+             <result name="input">/address.jsp</result>
+		</action>
+		<action name="Majorclassescaction" class="com.action.Majorclassescaction">
+			<result name="success">/major.jsp</result>
+             <result name="input">/major.jsp</result>
+		</action>
+	</package>
+	
+</struts>
+
