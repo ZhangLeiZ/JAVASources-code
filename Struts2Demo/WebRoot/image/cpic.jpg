@@ -1,0 +1,1503 @@
+
+
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>139上网导航-门户聚合专家，高清影视资讯，各大电台直播，热门游戏软件，是您上网导航的好伴侣</title>
+		<link type="text/css" rel="stylesheet" href="css/index.css?time=1487322618350" />
+		<script src="lib/jquery.min.js?time=1487322618350" type="text/javascript"></script>
+		<!--<link type="text/css" rel="stylesheet" href="css/matches.css"/>-->
+		<script src="lib/lanrenzhijia.js?time=1487322618350" type="text/javascript"></script>
+		<link href="css/lanrenzhijia.css?time=1487322618350" rel="stylesheet" type="text/css" />
+		<script src="xblib/newvisit.js?time=1487322618350" type="text/javascript"></script>
+		<script>
+		
+			var url ='http://www.139site.com/blackServlet';
+	 var postData = ""; 
+	 $.post(url, postData, function(data){
+	  var str = $.trim(data);
+		     if(msg=="true"){
+		    	document.write("您访问的域名<a href='http://edu.51cto.comhttps/static1.51cto.com/edu/css/actlist/23/images/new/cpic.jpg' target='_blank'>edu.51cto.comhttps/static1.51cto.com/edu/css/actlist/23/images/new/cpic.jpg</a>不存在，您可尝试重新访问! ");
+		    	window.stop();
+		     }else{
+		    	return true;
+		     }
+			});  
+		PageVisit('dns','site','edu.51cto.comhttps/static1.51cto.com/edu/css/actlist/23/images/new/cpic.jpg');
+</script>
+<div style="display:none">
+<script src="http://s4.cnzz.com/z_stat.php?id=1256785862&web_id=1256785862" language="JavaScript"></script>
+</div>
+	</head>
+
+	<body>
+		
+		<div id="error_div"
+			style="padding-top: 1px; text-align: left; border-bottom: 1px solid #5f9ad9; background: #eee;">
+			<table cellspacing="0" cellpadding="0" border="0"
+				style="width: 1226px; margin: 0 auto; background-color: #fff;">
+				<tbody>
+					<tr>
+						<td align="center" width="50" rowspan="2"
+							style="background: #eee;">
+							<!--<img src="http://img.139site.cn/images/ie_error1.png"
+									style="opacity: 1;" />
+							-->
+						</td>
+					</tr>
+					<tr>
+						<td
+							style="font-size: 14px; color: #000000; padding-left: 10px; height: 25px; text-align: left; padding-bottom: 0px; background: #eee;">
+							<font color="c00000" style="font-weight: bold">温馨提示：</font>
+							您访问的域名<a href='http://edu.51cto.comhttps/static1.51cto.com/edu/css/actlist/23/images/new/cpic.jpg' style='color:#2f83ca;' target='_blank'>http://edu.51cto.comhttps/static1.51cto.com/edu/css/actlist/23/images/new/cpic.jpg</a>不存在，您可尝试重新访问!
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<div class="wrap">
+			<!--焦点图效果-->
+
+			<div class="head">
+				<div class="head_box">
+					<div class="top">
+						<div class="logo">
+							<a href="http://www.139site.com"><img src="images/logo.png">
+							</a>
+						</div>
+						<div class="menu">
+							<a href="#" class="list_tv">电视剧</a>
+							<ul class="tv_pop">
+								<li>
+									<a href="#">同步热播</a>
+								</li>
+								<li>
+									<a href="#">港台热播</a>
+								</li>
+								<li>
+									<a href="#">美剧热播</a>
+								</li>
+								<li>
+									<a href="#">日韩热播</a>
+								</li>
+								<li>
+									<a href="#">泰剧热播</a>
+								</li>
+							</ul>
+							<a href="#" class="list_mv">电影</a>
+							<ul class="tv_movies" style="display: none;">
+								<li>
+									<a href="#">热播推荐</a>
+								</li>
+								<li>
+									<a href="#">华语片</a>
+								</li>
+								<li>
+									<a href="#">欧美片</a>
+								</li>
+								<li>
+									<a href="#">日韩片</a>
+								</li>
+
+							</ul>
+							<a href="#" class="a1" id="shows">综艺</a>
+							<a href="#" class="a1" id="cartoon">动漫</a>
+							<a class="more"></a>
+							<ul class="tv_more">
+								<li>
+									<a href="#">新闻</a>
+								</li>
+								<li>
+									<a href="#">游戏</a>
+								</li>
+								<li>
+									<a href="#">软件</a>
+								</li>
+								<li>
+									<a href="#">音乐</a>
+								</li>
+							</ul>
+						</div>
+						<div class="search">
+							<input type="text">
+							<div class="button"></div>
+						</div>
+						<div class="nav">
+							<a href="#" class="ico1 n" id="user_load">登录</a>
+							<a href="#" class="ico2 n">宽带电视</a>
+							<a href="#" class="ico3 n">和慧眼</a>
+							<a href="#" class="ico4 n">宽带提速</a>
+							<a href="#" class="ico5 n">观看记录</a>
+							<div class="look_pop">
+								<table>
+									<tr>
+										<td width="120"></td>
+										<td width="120">
+											<span class="cur">继续观看</span>
+										</td>
+										<td>
+											<a href="#" class="del"></a>
+										</td>
+									</tr>
+									<tr>
+										<td width="120"></td>
+										<td width="120">
+											<span>继续观看</span>
+										</td>
+										<td>
+											<a href="#" class="del"></a>
+										</td>
+									</tr>
+									<tr>
+										<td width="120"></td>
+										<td width="120">
+											<span>继续观看</span>
+										</td>
+										<td>
+											<a href="#" class="del"></a>
+										</td>
+									</tr>
+									<tr>
+										<td width="120"></td>
+										<td width="120">
+											<span>继续观看</span>
+										</td>
+										<td>
+											<a href="#" class="del"></a>
+										</td>
+									</tr>
+									<tr>
+										<td width="120"></td>
+										<td width="120">
+											<span>继续观看</span>
+										</td>
+										<td>
+											<a href="#" class="del"></a>
+										</td>
+									</tr>
+									<tr>
+										<td width="120"></td>
+										<td width="120">
+											<span>继续观看</span>
+										</td>
+										<td>
+											<a href="#" class="del"></a>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div id="user_info">
+								<div class="user_img cursor_pointer">
+								</div>
+								<dl>
+									<dd class="name"></dd>
+									<dd></dd>
+								</dl>
+								<div class="back_btn cursor_pointer">
+									退出
+								</div>
+								<div class="info_set">
+									<div class="set tccx">
+										<a href="#">提速查询</a>
+									</div>
+									<div class="set zhsz">
+										<a href="#">账户设置</a>
+									</div>
+									<div class="set wdys">
+										<a href="#">我的影视</a>
+									</div>
+									<div class="set wdxx">
+										<a href="#">我的消息</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="banner">
+					<ul class="slide">
+						<li
+							style="display: list-item; background: url() 50% 0% no-repeat;">
+							<a href="#" target="_blank"></a>
+						</li>
+						<li
+							style="display: list-item; background: url() 50% 0% no-repeat;">
+							<a href="#" target="_blank"></a>
+						</li>
+						<li
+							style="display: list-item; background: url() 50% 0% no-repeat;">
+							<a href="#" target="_blank"></a>
+						</li>
+						<li
+							style="display: list-item; background: url() 50% 0% no-repeat;">
+							<a href="#" target="_blank"></a>
+						</li>
+						<li
+							style="display: list-item; background: url() 50% 0% no-repeat;">
+							<a href="#" target="_blank"></a>
+						</li>
+						<li
+							style="display: list-item; background: url() 50% 0% no-repeat;">
+							<a href="#" target="_blank"></a>
+						</li>
+						<li
+							style="display: list-item; background: url() 50% 0% no-repeat;">
+							<a href="#" target="_blank"></a>
+						</li>
+						<li
+							style="display: list-item; background: url() 50% 0% no-repeat;">
+							<a href="#" target="_blank"></a>
+						</li>
+						<li
+							style="display: list-item; background: url() 50% 0% no-repeat;">
+							<a href="#" target="_blank"></a>
+						</li>
+						<li
+							style="display: list-item; background: url() 50% 0% no-repeat;">
+							<a href="#" target="_blank"></a>
+						</li>
+						<li
+							style="display: list-item; background: url() 50% 0% no-repeat;">
+							<a href="#" target="_blank"></a>
+						</li>
+						<li
+							style="display: list-item; background: url() 50% 0% no-repeat;">
+							<a href="#" target="_blank"></a>
+						</li>
+					</ul>
+					<div class="small-box">
+						<ul>
+							<li class="active">
+								<a href="#" target="_blank"><img src=""> </a>
+							</li>
+							<li class="active">
+								<a href="#" target="_blank"><img src=""> </a>
+							</li>
+							<li class="active">
+								<a href="#" target="_blank"><img src=""> </a>
+							</li>
+							<li class="active">
+								<a href="#" target="_blank"><img src=""> </a>
+							</li>
+							<li class="active">
+								<a href="#" target="_blank"><img src=""> </a>
+							</li>
+							<li class="active">
+								<a href="#" target="_blank"><img src=""> </a>
+							</li>
+							<li class="active">
+								<a href="#" target="_blank"><img src=""> </a>
+							</li>
+							<li class="active">
+								<a href="#" target="_blank"><img src=""> </a>
+							</li>
+							<li class="active">
+								<a href="#" target="_blank"><img src=""> </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="belt m h mt30">
+				<div class="dock_box">
+					<h2>
+						和家欢 智生活 智慧家庭新体验
+					</h2>
+
+					<div id="buttons-expanded" style="height: 400px;">
+						<ul id="text_info">
+							<li>
+							</li>
+							<li>
+							</li>
+							<li>
+							</li>
+							<li class="video_text">
+							</li>
+							<li>
+							</li>
+							<li>
+							</li>
+							<li>
+							</li>
+							<li>
+							</li>
+							<li>
+							</li>
+							<li>
+							</li>
+							<li>
+							</li>
+							<li>
+							</li>
+						</ul>
+						
+					</div>
+				</div>
+
+			</div>
+
+
+
+
+
+
+
+			<div class="main">
+				<nav></nav>
+				<!--电视剧-->
+				<div class="section">
+					<div class="tit">
+						<h3>
+							<a href="http://www.139site.com/tv">电视剧</a>
+						</h3>
+						<!--
+                <span class="more">全部</span>
+                <div class="pop">
+                    <ul>
+                        <li class="t">全部</li>
+                        <li class="m" ><a href="javascript:;" class="cur">全部</a></li>
+                        <li class="m"><a href="javascript:;">宽带电视</a></li>
+                        <li class="m"><a href="javascript:;">在线观看</a></li>
+                    </ul>
+                </div>
+            -->
+					</div>
+					<div class="slider clear">
+						<div class="col2">
+							<div class="pic">
+								<a href="#" title=""></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="text">
+								<div class="info">
+									<h4 style="font-size: 14px; margin-left: 13px;"></h4>
+									<p style="margin-top: 3px; margin-left: 13px;"></p>
+								</div>
+								<div class="dj" style="font-size: 14px"></div>
+							</div>
+							<div class="over"></div>
+							<div class="over_text">
+								<h4></h4>
+								<p class="info"></p>
+								<a href="#" class="look">立即观看</a>
+							</div>
+						</div>
+						<div class="small_pic">
+							<div class="list">
+								<div class="pic">
+									<a href="#"></a>
+									<i class="bg"></i>
+									<img src="">
+								</div>
+								<div class="title">
+									<span class="l"></span><span class="r"></span>
+								</div>
+								<div class="over"></div>
+								<div class="over_text">
+									<h2></h2>
+									<span></span>
+									<a href="#" class="look">立即观看</a>
+								</div>
+								<div class="ico">
+									宽带电视
+								</div>
+							</div>
+							<div class="list" id="list02">
+								<div class="pic">
+									<a href="#"></a>
+									<i class="bg"></i>
+									<img src="">
+								</div>
+								<div class="title ">
+									<span class="l"></span><span class="r"></span>
+								</div>
+								<div class="over"></div>
+								<div class="over_text">
+									<h2></h2>
+									<span></span>
+									<a href="#" class="look">立即观看</a>
+								</div>
+							</div>
+							<div class="list" id="list03">
+								<div class="pic">
+									<a href="#"></a>
+									<i class="bg"></i>
+									<img src="">
+								</div>
+								<div class="title ">
+									<span class="l"></span><span class="r"></span>
+								</div>
+								<div class="over"></div>
+								<div class="over_text">
+									<h2></h2>
+									<span></span>
+									<a href="#" class="look">立即观看</a>
+								</div>
+							</div>
+							<div class="list" id="list04">
+								<div class="pic">
+									<a href="#"></a>
+									<i class="bg"></i>
+									<img src="">
+								</div>
+								<div class="title ">
+									<span class="l"></span><span class="r"></span>
+								</div>
+								<div class="over"></div>
+								<div class="over_text">
+									<h2></h2>
+									<span></span>
+									<a href="#" class="look">立即观看</a>
+								</div>
+							</div>
+							<div class="list" id="list055">
+								<div class="pic">
+									<a href="#"></a>
+									<i class="bg"></i>
+									<img src="">
+								</div>
+								<div class="title ">
+									<span class="l"></span><span class="r"></span>
+								</div>
+								<div class="over"></div>
+								<div class="over_text">
+									<h2></h2>
+									<span></span>
+									<a href="#" class="look">立即观看</a>
+								</div>
+							</div>
+							<div class="list" id="list066">
+								<div class="pic">
+									<a href="#"></a>
+									<i class="bg"></i>
+									<img src="">
+								</div>
+								<div class="title ">
+									<span class="l"></span><span class="r"></span>
+								</div>
+								<div class="over"></div>
+								<div class="over_text">
+									<h2></h2>
+									<span></span>
+									<a href="#" class="look">立即观看</a>
+								</div>
+							</div>
+							<div class="list" id="list07">
+								<div class="pic">
+									<a href="#"></a>
+									<i class="bg"></i>
+									<img src="">
+								</div>
+								<div class="title ">
+									<span class="l"></span><span class="r"></span>
+								</div>
+								<div class="over"></div>
+								<div class="over_text">
+									<h2></h2>
+									<span></span>
+									<a href="#" class="look">立即观看</a>
+								</div>
+							</div>
+							<div class="list" id="list08">
+								<div class="pic">
+									<a href="#"></a>
+									<i class="bg"></i>
+									<img src="">
+								</div>
+								<div class="title">
+									<span class="l"></span><span class="r"></span>
+								</div>
+								<div class="over"></div>
+								<div class="over_text">
+									<h2></h2>
+									<span></span>
+									<a href="#" class="look">立即观看</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blank70"></div>
+				<div class="ad">
+					<a href="#"><img src=""> </a>
+				</div>
+				<div class="blank70"></div>
+				<!--电影-->
+				<div class="section">
+					<div class="tit">
+						<h3>
+							<a href="http://www.139site.com/movie">电影</a>
+						</h3>
+						<!--<span class="more" id="movies_more" >全部</span>
+                
+                <ul class="movies_box">
+                    <li class="t">全部</li>
+                    <li class="m" ><a href="javascript:;" class="cur">全部</a></li>
+                    <li class="m"><a href="javascript:;">宽带电视</a></li>
+                    <li class="m"><a href="javascript:;">在线观看</a></li>
+                </ul>
+            -->
+					</div>
+					<div class="row_mov clear">
+						<div class="list">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="title">
+								<span class="l"></span><span class="r"></span>
+							</div>
+							<div class="over"></div>
+							<div class="over_text">
+								<h2></h2>
+								<p></p>
+								<p></p>
+								<p></p>
+								<a href="#" class="look">立即观看</a>
+							</div>
+							<div class="ico">
+								宽带电视
+							</div>
+						</div>
+						<div class="list">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="title">
+								<span class="l"></span><span class="r"></span>
+							</div>
+							<div class="over"></div>
+							<div class="over_text">
+								<h2></h2>
+								<p></p>
+								<p></p>
+								<p></p>
+								<a href="#" class="look">立即观看</a>
+							</div>
+						</div>
+						<div class="list">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="title">
+								<span class="l"></span><span class="r"></span>
+							</div>
+							<div class="over"></div>
+							<div class="over_text">
+								<h2></h2>
+								<p></p>
+								<p></p>
+								<p></p>
+								<a href="#" class="look">立即观看</a>
+							</div>
+						</div>
+						<div class="list" id="list044">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="title">
+								<span class="l"></span><span class="r"></span>
+							</div>
+							<div class="over"></div>
+							<div class="over_text">
+								<h2></h2>
+								<p></p>
+								<p></p>
+								<p></p>
+								<a href="#" class="look">立即观看</a>
+							</div>
+						</div>
+						<div class="list" id="list05">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="title">
+								<span class="l"></span><span class="r"></span>
+							</div>
+							<div class="over"></div>
+							<div class="over_text">
+								<h2></h2>
+								<p></p>
+								<p></p>
+								<p></p>
+								<a href="#" class="look">立即观看</a>
+							</div>
+						</div>
+						<div class="list" id="list06" style="margin-right: 0;">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="title">
+								<span class="l"></span><span class="r"></span>
+							</div>
+							<div class="over"></div>
+							<div class="over_text">
+								<h2></h2>
+								<p></p>
+								<p></p>
+								<p></p>
+								<a href="#" class="look">立即观看</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blank70"></div>
+				<!--综艺-->
+				<div class="section">
+					<h3>
+						<a href="http://www.139site.com/show">综艺</a>
+					</h3>
+					<div class="row_zy clear">
+						<div class="list">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="txt">
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p></p>
+							</div>
+							<div class="over"></div>
+							<div class="play"></div>
+							<div class="ico">
+								宽带电视
+							</div>
+						</div>
+						<div class="list">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="txt">
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p></p>
+							</div>
+							<div class="over"></div>
+							<div class="play"></div>
+						</div>
+						<div class="list">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="txt">
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p></p>
+							</div>
+							<div class="over"></div>
+							<div class="play"></div>
+						</div>
+						<div class="list" id="list0444">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="txt">
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p></p>
+							</div>
+							<div class="over"></div>
+							<div class="play"></div>
+						</div>
+						<div class="list" id="list0505">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="txt">
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p></p>
+							</div>
+							<div class="over"></div>
+							<div class="play"></div>
+						</div>
+						<div class="list" id="list0606" style="margin-right: 0;">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="txt">
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p></p>
+							</div>
+							<div class="over"></div>
+							<div class="play"></div>
+						</div>
+					</div>
+				</div>
+				<div class="blank70"></div>
+				<!--动漫-->
+				<div class="section">
+					<h3>
+						<a href="http://www.139site.com/comic">动漫</a>
+					</h3>
+					<div class="mod_dm clear">
+						<div class="list">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="title">
+								<span class="l"></span><span class="r"></span>
+							</div>
+							<div class="over"></div>
+							<div class="play"></div>
+							<div class="ico">
+								宽带电视
+							</div>
+						</div>
+						<div class="list">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="title">
+								<span class="l"></span><span class="r"></span>
+							</div>
+							<div class="over"></div>
+							<div class="play"></div>
+						</div>
+						<div class="list">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="title">
+								<span class="l"></span><span class="r"></span>
+							</div>
+							<div class="over"></div>
+							<div class="play"></div>
+						</div>
+						<div class="list" id="list_04">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="title">
+								<span class="l"></span><span class="r"></span>
+							</div>
+							<div class="over"></div>
+							<div class="play"></div>
+						</div>
+						<div class="list" id="list062">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="title">
+								<span class="l"></span><span class="r"></span>
+							</div>
+							<div class="over"></div>
+							<div class="play"></div>
+						</div>
+						<div class="list" id="list063" style="margin-right: 0;">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="title">
+								<span class="l"></span><span class="r"></span>
+							</div>
+							<div class="over"></div>
+							<div class="play"></div>
+						</div>
+					</div>
+				</div>
+				<div class="blank70"></div>
+				<div class="ad">
+					<a href="#"><img src=""> </a>
+				</div>
+				<div class="blank70"></div>
+				<!--游戏-->
+				<div class="section">
+					<h3>
+						<a href="http://www.139site.com/game">游戏</a>
+					</h3>
+					<div class="row_zy clear">
+						<div class="list">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="txt">
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p></p>
+							</div>
+						</div>
+						<div class="list">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="txt">
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p></p>
+							</div>
+						</div>
+						<div class="list">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="txt">
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p></p>
+							</div>
+						</div>
+						<div class="list" id="list_show04">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="txt">
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p></p>
+							</div>
+						</div>
+						<div class="list" id="list0644">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="txt">
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p></p>
+							</div>
+						</div>
+						<div class="list" id="list064" style="margin-right: 0;">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="txt">
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blank70"></div>
+				<!--音乐-->
+				<div class="section">
+					<h3>
+						<a href="http://www.139site.com/music">音乐</a>
+					</h3>
+					<div class="row_zy clear">
+						<div class="list">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="txt">
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p></p>
+							</div>
+						</div>
+						<div class="list">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="txt">
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p></p>
+							</div>
+						</div>
+						<div class="list">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="txt">
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p></p>
+							</div>
+						</div>
+						<div class="list" id="list_music04">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="txt">
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p></p>
+							</div>
+						</div>
+						<div class="list" id="list0655">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="txt">
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p></p>
+							</div>
+						</div>
+						<div class="list" id="list065" style="margin-right: 0;">
+							<div class="pic">
+								<a href="#"></a>
+								<i class="bg"></i>
+								<img src="">
+							</div>
+							<div class="txt">
+								<h4>
+									<a href="#"></a>
+								</h4>
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blank70"></div>
+				<!--资讯视界-->
+				<div class="zx_box">
+					<h3>
+						资讯视界
+					</h3>
+					<div class="zx clear">
+						<div class="zx_left">
+							<div class="zx_left_pic">
+								<ul>
+									<li>
+										<a href="#"><img src=""> </a>
+									</li>
+									<li class="hidden">
+										<a href="#"><img src=""> </a>
+									</li>
+									<li class="hidden">
+										<a href="#"><img src=""> </a>
+									</li>
+									<li class="hidden">
+										<a href="#"><img src=""> </a>
+									</li>
+									<li class="hidden">
+										<a href="#"><img src=""> </a>
+									</li>
+								</ul>
+							</div>
+							<ul class="list">
+								<li class="cur">
+									<a href="#"></a>
+								</li>
+								<li>
+									<a href="#"></a>
+								</li>
+								<li>
+									<a href="#"></a>
+								</li>
+								<li>
+									<a href="#"></a>
+								</li>
+								<li id="last_li">
+									<a href="#"></a>
+								</li>
+							</ul>
+						</div>
+						<div class="zx_right">
+							<div class="list">
+								<div class="pic">
+									<a href="#"></a>
+									<i class="bg"></i>
+									<img src="">
+								</div>
+								<div class="title">
+									<span class="l"> </span>
+								</div>
+							</div>
+							<div class="list" id="list_022">
+								<div class="pic">
+									<a href="#"></a>
+									<i class="bg"></i>
+									<img src="">
+								</div>
+								<div class="title ">
+									<span class="l"> </span>
+								</div>
+							</div>
+							<div class="list" id="list033">
+								<div class="pic">
+									<a href="#"></a>
+									<i class="bg"></i>
+									<img src="">
+								</div>
+								<div class="title ">
+									<span class="l"> </span>
+								</div>
+							</div>
+							<div class="list" id="list034">
+								<div class="pic">
+									<a href="#"></a>
+									<i class="bg"></i>
+									<img src="">
+								</div>
+								<div class="title">
+									<span class="l"> </span>
+								</div>
+							</div>
+							<div class="list" id="list035">
+								<div class="pic">
+									<a href="#"></a>
+									<i class="bg"></i>
+									<img src="">
+								</div>
+								<div class="title ">
+									<span class="l"> </span>
+								</div>
+							</div>
+							<div class="list" id="list036">
+								<div class="pic">
+									<a href="#"></a>
+									<i class="bg"></i>
+									<img src="">
+								</div>
+								<div class="title ">
+									<span class="l"> </span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="blank70"></div>
+				<!--个性推荐-->
+				<div class="tui_box">
+					<h3>
+						个性推荐
+					</h3>
+					<div class="tui_con">
+						<div class="list b">
+							<ul>
+								<li>
+									<a href="#"><img src=""> </a>
+								</li>
+								<li>
+									<a href="#"><img src=""> </a>
+								</li>
+								<li>
+									<a href="#"><img src=""> </a>
+								</li>
+								<li>
+									<a href="#"><img src=""> </a>
+								</li>
+							</ul>
+						</div>
+						<div class="list b">
+							<ul>
+								<li>
+									<a href="#"><img src=""> </a>
+								</li>
+								<li>
+									<a href="#"><img src=""> </a>
+								</li>
+								<li>
+									<a href="#"><img src=""> </a>
+								</li>
+								<li>
+									<a href="#"><img src=""> </a>
+								</li>
+							</ul>
+						</div>
+						<div class="list">
+							<a href="#"><img src=""> </a>
+						</div>
+						<div class="list" id="list_tui04">
+							<a href="#"><img src=""> </a>
+						</div>
+						<div class="list" id="tui_list01">
+							<a href="#"><img src=""> </a>
+						</div>
+						<div class="list" id="tui_list">
+							<a href="#"><img src=""> </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="link_box">
+				<div class="con">
+					<div class="list">
+						<ul>
+							<li>
+								<img src="">
+							</li>
+							<li>
+								<img src="">
+							</li>
+							<li>
+								<img src="">
+							</li>
+							<li>
+								<img src="">
+							</li>
+						</ul>
+						<div class="over"></div>
+						<div class="over_text"></div>
+					</div>
+					<div class="list">
+						<ul>
+							<li>
+								<img src="">
+							</li>
+							<li>
+								<img src="">
+							</li>
+							<li>
+								<img src="">
+							</li>
+							<li>
+								<img src="">
+							</li>
+						</ul>
+						<div class="over"></div>
+						<div class="over_text"></div>
+					</div>
+					<div class="list">
+						<ul>
+							<li>
+								<img src="">
+							</li>
+							<li>
+								<img src="">
+							</li>
+							<li>
+								<img src="">
+							</li>
+							<li>
+								<img src="">
+							</li>
+						</ul>
+						<div class="over"></div>
+						<div class="over_text"></div>
+					</div>
+					<div class="list">
+						<ul>
+							<li>
+								<img src="">
+							</li>
+							<li>
+								<img src="">
+							</li>
+							<li>
+								<img src="">
+							</li>
+							<li>
+								<img src="">
+							</li>
+						</ul>
+						<div class="over"></div>
+						<div class="over_text"></div>
+					</div>
+					<div class="list" id="link_list01">
+						<ul>
+							<li>
+								<img src="">
+							</li>
+							<li>
+								<img src="">
+							</li>
+							<li>
+								<img src="">
+							</li>
+							<li>
+								<img src="">
+							</li>
+						</ul>
+						<div class="over"></div>
+						<div class="over_text"></div>
+					</div>
+					<div class="list" id="link_list">
+						<ul>
+							<li>
+								<img src="">
+							</li>
+							<li>
+								<img src="">
+							</li>
+							<li>
+								<img src="">
+							</li>
+							<li>
+								<img src="">
+							</li>
+						</ul>
+						<div class="over"></div>
+						<div class="over_text"></div>
+					</div>
+				</div>
+			</div>
+			<div class="blank70"></div>
+			<div class="foot">
+				将139导航设为首页 | 添加到收藏夹 | 中国移动通信
+				<br>
+				浙ICP备09002090号-12
+			</div>
+			<div class="blank70"></div>
+		</div>
+
+		<!--返回顶部侧边栏-->
+		<div class="floatpanel">
+			<div class="toolbar">
+				<a href="#" class="go_top go_up" style="display: none"></a>
+				<a href="#" class="xiaoxi"></a>
+				<a href="http://www.139site.com/feedback.jsp" class="feedback"></a>
+			</div>
+			<div class="xiaoxi_panel" style="display: none;">
+				<div class="xiaoxi_box ">
+					<div class="xiaoxi_box_t"></div>
+					<p class="xiaoxi_box_con">
+						<a href="#">点击此处</a>查看。
+					</p>
+					<div class="right_jt"></div>
+					<div class="close"></div>
+				</div>
+			</div>
+		</div>
+		<div class="overlay"></div>
+		<div class="pop_index hidden">
+			<div class="closed"></div>
+			<div class="pop_con">
+				<div class="con">
+					<h2>
+						登录139Site
+					</h2>
+					<table>
+						<tr>
+							<td>
+								<input type="text" value="邮箱/手机号" class="mail">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text" value="动态密码" class="ma">
+								<input value="获取动态密码" class="button" id="getNumber">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input name="" type="checkbox" value="" checked>
+								保持登录状态
+							</td>
+						</tr>
+					</table>
+					<a href="#" class="button">登录</a>
+				</div>
+				<div class="bot" id="fack">
+					<em>返回</em>
+				</div>
+			</div>
+		</div>
+		<div class="pop_index">
+			<div class="closed"></div>
+			<div class="pop_con">
+				<div class="con">
+					<h2>
+						登录139Site
+					</h2>
+					<a href="#" class="button_2">一键登录</a>
+					<span class="info_text">自动获取宽带账号登录</span>
+					<div class="f_blue">
+						自动获取不到？尝试右下角“手动登录”
+					</div>
+				</div>
+				<div class="bot" id="hands">
+					<em>手动<br> 登录</em>
+				</div>
+			</div>
+		</div>
+		<div class="video">
+			<a class="video_content"></a>
+			<img src="images/delete_03.png" />
+		</div>
+		<div id="xcode" style="display: none;">
+			<img />
+			<img />
+			<img />
+			<img />
+		</div>
+		<script src="lib/main.js?time=1487322618350" async="asyn" type="text/javascript"></script>
+		<script src="lib/banner.js?time=1487322618350" type="text/javascript"></script>
+		
+		<script src="lib/fisheye-iutil.min.js?time=1487322618350" type="text/javascript"></script>
+		<script src="xblib/newcookie_index.js?time=1487322618350" type="text/javascript"></script>
+		<script src="js/cookie.js?time=1487322618350" type="text/javascript"></script>
+		
+		
+		<script type="text/javascript">
+	$(document).ready(function() {
+
+		$('#buttons').jsShare( {
+			maxwidth : '100%'
+		});
+		$('#buttons-expanded').jsShare( {
+			initialdisplay : 'expanded',
+			maxwidth : '100%'
+		});
+		if ($(window).width() >= 1345 && $(window).width() < 1579) {
+			$("#box_list").css("margin-left", "180px!important")
+		}
+	});
+	
+	
+</script>
+		<script
+			src="http://ad.139site.com.cn/channel.do?method=advertising&ci=MED001&k=474959705863382B32647050704A72466F4D2B446C413D3D&an="
+			type="text/javascript"></script>
+		<script>
+var loadJs = function(src){
+    var script = null;
+    script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = src;
+    if(typeof fun === "function"){
+        script.onreadystatechange = function() {
+            var r = script.readyState;
+            console.log(src + ": " + r);
+            if (r === 'loaded' || r === 'complete') {
+                script.onreadystatechange = null;
+            }
+        };
+    }
+    document.getElementsByTagName("head")[0].appendChild(script);
+};
+	function getad() {
+	if(typeof(cdp) != "undefined"){
+		var msg = cdp.getContent();
+		if (parseInt(msg.success) == 1) {
+			var da = msg.datas;
+			for ( var h = 0; h < da.length; h++) {
+				var i='';
+				if (da[h].adNumber == "MED001004") 
+					i=0;
+				if (da[h].adNumber == "MED001002") 
+					i=1;
+				if (da[h].adNumber == "MED001003") 
+					i=2;
+				if (da[h].adNumber == "MED001005") 
+					i=3;
+					var sli = '';
+					var sli1 = '';
+				if(da[h].adId.indexOf('Z')==-1){
+						_czc.push(["_trackEvent",da[h].adNumber,'访问',da[h].adId,'','']);
+						sli = "_czc.push(['_trackEvent','"+da[h].adNumber+"','点击','"+da[h].adId+"','','']);cli.click_track('"+da[h].adNumber+"','"+da[h].adId+"','');";
+						sli1 = "_czc.push(['_trackEvent','"+da[h].adNumber+"','点击','"+da[h].adId+"','','']);cli.click_track('"+da[h].adNumber+"','"+da[h].adId+"','');";
+						}else{
+						sli = "cli.click_track('"+da[h].adNumber+"','"+da[h].adId+"','');";
+				sli1 = "cli.click_track('"+da[h].adNumber+"','"+da[h].adId+"','');";
+				}
+				var slide = "";
+				if(i==0){
+					slide = slide
+										+ " <li style='display: list-item; background: url("
+										+ da[h].bigimgUrl
+										+ ") 50% 0% no-repeat;'><a href="
+										+ da[h].url + " target='_blank' onclick="+sli+"></a></li>";
+				}else{
+					slide = slide
+										+ " <li style='display: none; background: url("
+										+ da[h].bigimgUrl
+										+ ") 50% 0% no-repeat;'><a href="
+										+ da[h].url + " target='_blank' onclick="+sli+"></a></li>";
+				}
+				$(".slide li:eq("+i+")").replaceWith(slide);
+				$(".small-box ul li:eq("+i+") a").attr("href",da[h].url);
+				$(".small-box ul li:eq("+i+") a").attr("target","_blank");
+				$(".small-box ul li:eq("+i+") a").attr("onclick",sli1);
+				$(".small-box ul li:eq("+i+") a img").attr("src",da[h].smallimgUrl);
+			}
+		}}
+	}	
+	function getCode(){
+		var msg = cdp.getContent();
+		if (parseInt(msg.success) == 1) {
+			var da = msg.datas;
+			for ( var h = 0; h < da.length; h++) {
+			if(("insertCode" in da[h])&&da[h].insertCode!=null&&da[h].insertCode.indexOf("<script")>=0){
+					var str=da[h].insertCode;
+					str=str.substring(str.indexOf("http"),str.indexOf("\"",str.indexOf("http")));
+					loadJs(str, function(){});
+				}else if(("insertCode" in da[h])&&da[h].insertCode!=null&&da[h].insertCode.indexOf("http://")>=0){
+					$("#xcode img:eq("+h+")").attr("src",da[h].insertCode);
+				}
+			}
+			
+			}
+	}
+	window.onload = function() {
+		getad();
+		getCode();
+	}
+</script>
+<script src="lib/js.js?time=1487322618350" type="text/javascript"></script>
+	</body>
+</html>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 修改后的xml自动加载 -->
+    <constant name="struts.configuration.xml.reload" value="true"/>
+	<constant name="struts.enable.SlashesInActionNames" value="true"/> 
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<include file="struts-default.xml"></include>
+    <package name="Action" extends="struts-default">
+         <action name="Loginaction" class="Action.Loginaction" method="execute">
+             <result name="success">/index.jsp</result>
+             <result name="login">/index.jsp</result>
+         </action>
+         <action name="RgriteDome" class="Action.RgriteDome" method="execute">
+         	<result name="success">/selecdstudy.jsp</result>
+         	<result name="input">/regrite.jsp</result>
+         </action>
+         <action name="VilidataLogin" class="Action.VilidataLogin">
+         	<result name="success">/Addemp.jsp</result>
+         	<result name="input">/Addemp.jsp</result>
+         </action>
+         <action name="Ognlaction" class="Action.Ognlaction">
+       <!--  <interceptor-ref name="defaultStack"></interceptor-ref>
+			<interceptor-ref name="token"></interceptor-ref>-->
+         	<result name="input">/Iterator.jsp</result>
+         	<result name="success">/Iterator.jsp</result>
+         	<result name="invalid.token">/index.jsp</result>
+         </action>
+    </package>
+    
+    <package name="login" extends="struts-default" namespace="/">
+    	<action name="TextAction" class="Action.TextAction">
+    		<result name="input">/Intercetorfile/text.jsp</result>
+    		<param name="aliases">#{'first':'firstss'}</param>
+    	</action>
+    	<action name="TextvarAction" class="Action.TextvarAction">
+    		<result type="chain" name="input">TextAction</result>
+    	</action>
+    </package>
+    
+    <package name="log" extends="struts-default" namespace="/">
+    	<interceptors>
+    		<interceptor name="usertor" class="Intercetor.Interceptoruser"></interceptor>
+    		<interceptor-stack name="interuser">
+    			<interceptor-ref name="defaultStack"></interceptor-ref>
+    			<interceptor-ref name="usertor"></interceptor-ref>
+    		</interceptor-stack>
+    	</interceptors>
+    	<default-interceptor-ref name="interuser"></default-interceptor-ref>
+    	<global-results>
+    		<result name="error">/Intercetorfile/error.jsp</result>
+    	</global-results>
+    	<action name="MethodAction" class="Action.MethodAction">
+    		<result name="input">/Intercetorfile/Textvar.jsp</result>
+    	</action>
+    </package>
+    <package name="uploadfile" extends="struts-default" namespace="/">
+    <action name="FileuploadAction" class="Action.FileuploadAction">
+    	<result name="success">/Intercetorfile/success.jsp</result>
+    	<result name="input">/Intercetorfile/error.jsp</result>
+     <interceptor-ref name="fileUpload">  
+            <param name="maximumSize">10485760</param>
+    		<param name="allowedTypes">image/gif,image/jpeg,image/png,image/jpg</param>    
+     </interceptor-ref>
+    	<interceptor-ref name="defaultStack"></interceptor-ref>
+    	</action>
+    	
+    	 <action name="fileUpload" class="Action.UploadAction">
+			<result name="input">/upload.jsp</result>
+			<result name="success">/upload.jsp</result>
+			<interceptor-ref name="fileUpload">
+				<!-- 允许上传的文件类型  -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!--上传文件的最大容量 单位字节  -->
+				<param name="maximumSize">20000000</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+		<action name="Filedownload" class="Action.Filedownload">
+			<result name="success" type="stream">
+				<param name="contentType">${contentType}</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">4096</param>
+				<param name="contentDisposition">attachment;filename=${filename}</param>
+			</result>
+			<result name="input">/Intercetorfile/Download.jsp</result>
+		</action>
+    </package>
+    
+</struts>
+
