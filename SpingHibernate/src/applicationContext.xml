@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	<import resource="./import-hbm.xml"/>
+	<bean id="beanConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>System.properties</value>
+			</list>	
+		</property>
+	</bean>
+	<!-- 
+		DriverManagerDataSource配置数据源
+	 -->
+	<bean id="dateSouce"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName"
+			value="${db.Driver}">
+		</property>
+		<property name="url"
+			value="${db.url}">
+		</property>
+		<property name="username" value="${db.username}"></property>
+		<property name="password" value="${db.password}"></property>
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<!-- 引用dataSource创建数据库的连接 -->
+		<property name="dataSource">
+			<ref bean="dateSouce" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${db.dialect}</prop>
+				<prop key="hibernate.show_sql">${db.show_sql}</prop>
+				<prop key="hibernate.format_sql">${db.format_sql}</prop>
+				<!-- 
+				hibernate.hbm2ddl.auto=update表示如果hbm.xml映射文件中的表在数据库中不存在就自动创建
+				hibernate.hbm2ddl.auto=create每次启动程序时都会自动生成hbm.xml映射文件中的表，如果存在，先删除再创建
+				 -->
+				
+			</props>
+		</property>
+		<!--hibernate中的映射配置
+		<property name="mappingResources">
+			<list>
+				<value>com/vo/StudentVo.hbm.xml</value>
+			</list>
+		</property>-->
+		<!-- hbm文件的配置是应用hbmappings -->
+		<property name="mappingLocations" ref="hbmappings"/>
+		
+	</bean>
+	<!-- 注入数据库连接对象 -->
+	<bean id="beseDAO" class="com.impl.shi.Studentimpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory"></ref>
+		</property>
+	</bean>
+	<!-- Spring AOP织入技术 -->
+	<!-- 函数执行前 -->
+	<bean id="logbeforeadivce" class="com.aop.LogBefoAdivce"></bean>
+	<bean id="logafteradivce" class="com.aop.LogAfderAdvice"></bean>
+	<bean id="loginterceptoradivce" class="com.aop.LogInterceptorAdivce"></bean>
+	<bean id="logThrowadivce" class="com.aop.LogThrowAdivce"></bean>
+	
+	<bean id="hellscope" class="com.aop.ScopeAidvce"></bean>
+	<!-- 
+	 <bean id="some" class="com.ht.ceshi.Some"></bean>
+	<bean id="helloFlowControlPointcut" class="org.springframework.aop.support.ControlFlowPointcut">
+		<constructor-arg value="com.ht.ceshi.Some"/>
+	</bean>
+	<bean id="hello" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+		<property name="advice" ref="logbeforeadivce"></property>
+		<property name="pointcut" ref="helloFlowControlPointcut"></property>
+	</bean> -->
+	
+	<bean id="hellospeaker" class="com.impl.shi.HelloSpeaker"></bean> 
+	<bean id="helloadvisor" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
+		<property name="mappedName">
+			<value>hello*</value>
+		</property>
+		<property name="advice" ref="logbeforeadivce"/>
+	</bean>
+	<bean id="adivceproxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="proxyInterfaces">
+				<value>com.aop.IHaivace</value>
+		</property>
+		<property name="target">
+			<ref bean="hellscope"/>
+		</property>
+		
+		<property name="interceptorNames">
+			<list>
+				<!-- 
+				<value>loginterceptoradivce</value>
+				<value>logThrowadivce</value>
+				<value>logafteradivce</value> 
+			
+				<value>helloadvisor</value>-->
+					<value>logbeforeadivce</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="adivceproxy2" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="proxyInterfaces">
+				<value>com.impl.shi.IHello</value>
+		</property>
+		<property name="target">
+			<ref bean="hellospeaker"/>
+		</property>
+		
+		<property name="interceptorNames">
+			<list>
+				<value>helloadvisor</value>
+			</list>
+		</property>
+	</bean>
+	
+	<!--  <bean id="helloProxy"
+          class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="proxyInterfaces"
+                  value="com.impl.shi.IHello"/>
+        <property name="target" ref="helloSpeaker"/>
+        <property name="interceptorNames">
+            <list>
+                <value>hello</value>
+            </list>
+        </property>
+    </bean>  -->
+	</beans>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<bean id="date" class="java.util.Date"/>
+	<bean id="textbean" class="com.vo.textSping" autowire="byType">
+		<property name="hlloe">
+			<value>张三</value>
+		</property>
+		<property name="nation">
+			<list>
+				<value>汉族</value>
+				<value>汉族</value>
+				<value>汉族</value>
+				<value>汉族</value>
+				<value>汉族</value>
+				<value>汉族</value>
+			</list>
+		</property>
+		<property name="list">
+			<list>
+				<value>dsagaegweg</value>
+				<value>ds54345weg</value>
+				<value>ds252weg</value>
+				<value>dsa254weg</value>
+				<value>dsahreh534g</value>
+				<ref local="date"></ref>
+			</list>
+		</property>
+		<property name="map">
+			<map>
+				<entry key="s1">
+					<value>米的</value>
+				</entry>
+				<entry key="s2">
+					<value>大师傅米的</value>
+				</entry>
+				<entry key="s3">
+					<value>发米的</value>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	</beans>
